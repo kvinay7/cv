@@ -1,132 +1,106 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Vinay's Personal Site</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinay Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <table cellspacing="0">
-    <tr>
-      <td>
-        <img src="1604378862262.jpg" alt="kvinay7" width="200" height="200">
-      </td>
-      <td>
-        <h1>Karani Vinay Kumar</h1>
-        <p>15/245, Valayanandapuram, Gudur, 524101</p>
-        <p>karani.vinaykumar7@gmail.com</p>
-        <p>+91 9703970058 <a href="https://www.linkedin.com/in/karani-vinay-kumar/">LinkedIn</a></p>
-      </td>
-    </tr>
-  </table>
-  <hr>
 
-  <dl>
-    <dt>
-      <h3><strong>Summary</strong></h3>
-    </dt>
-    <dd>
-      <p>Enthusiastic engineering student with basic knowledge in coding and problem solving.</p>
-      <p>Ability to learn new softwares and technologies quickly. Capability to work in teams by providing valuable support.</p>
-    </dd>
-  </dl>
-  <hr>
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <div>
+        <h1 class="navbar-brand">Vinay</h1>
+      </div>
+      <ul class="menu-items">
+        <li><a href="#about">About</a></li>
+        <li><a href="#my-works">Projects</a></li>
+        <li><a href="#contact-me">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="home-content" id="home-page">
+    <div class="name">
+      <h1>Hi, I'm Vinay</h1>
+      <p>A Computer Science Graduate.</p>
+    </div>
+    <div class="angle-down-icon">
+      <a href="#about"><i class="fas fa-angle-down"></i></a>
+    </div>
+  </div>
+</header>
 
+<section class="about-me" id="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="left-content">
+        <div>
+          <h1 class="about-heading">About Me</h1>
+        </div>
+        <img src="https://media.licdn.com/dms/image/C4D03AQGFpCvcvv8oxg/profile-displayphoto-shrink_400_400/0/1604378862262?e=1696464000&v=beta&t=L-hxBes1fVL65zfFFRxjn4fjlShTZa0BtyQz7jpROKs" alt="image" />
+        <p>
+          Enthusiastic computer science graduate with basic knowledge in coding and problem solving. Ability to learn new software and technologies quickly. Capability to work in teams by providing valuable support.
+        </p>
+        <div class="work-arrow">
+          <p>
+            <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <dl>
+<section id="my-works">
+  <div class="portfolio">
+    <div class="proj-heading">
+      <h1>Projects</h1>
+    </div>
+    <div class="portfolio-content container">
+      <div class="proj-1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqbbH4OQQRaGhtW7kyr0u775dqSv7Krn8ffw&usqp=CAU">
+        <div class="proj1-details">
+          <h2>Online Food Ordering App</h2>
+          <p>Designed to provide a convenient and efficient platform for customers to order food from various
+            restaurants online.</p>
+        </div>
+      </div>
+      <br>
+      <div class="proj-1">
+        <img src="https://www.wordstream.com/wp-content/uploads/2021/05/customer-relationship-management-CRM-for-small-business_0.png">
+        <div class="proj1-details">
+          <h2>CRM using Spring Boot</h2>
+          <p>Used to store the details of customers at restaurants and shopping malls to provide customer
+            support via Whatsapp and Emails.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <dt>
-        <h3><strong>Education</strong></h3>
-      </dt>
-
-    <dd>
-      <dl>
-        <dt>
-        <h4>Narayana Engineering College, Gudur (2019-23)</h4>
-        </dt>
-        <dd>
-          <p>BTech-CSE &emsp;&nbsp; (7.01 CGPA)</p>
-        </dd>
-      </dl>
-    </dd>
-
-    <dd>
-      <dl>
-        <dt>
-        <h4>Sri Balaji Junior College, Gudur (2017-19)</h4>
-        </dt>
-        <dd>
-          <p>Inter-MPC &emsp;&ensp;&nbsp; (8.40 CGPA)</p>
-        </dd>
-      </dl>
-    </dd>
-
-    <dd>
-      <dl>
-        <dt>
-        <h4>CSM High School, Gudur (2016-17)</h4>
-        </dt>
-        <dd>
-          <p>SSC &emsp;&emsp;&emsp;&emsp;&nbsp; (9.20 GPA)</p>
-        </dd>
-      </dl>
-    </dd>
-
-  </dl>
-  <hr>
-
-  <dl>
-    <dt>
-      <h3><strong>Projects</strong></h3>
-    </dt>
-    <dd>
-      <p>
-        IoT based Smart Door with Face Recognition
+<div class="contact" id="contact-me">
+  <div class="container">
+    <div class="contact-content">
+      <h2>Contact Me</h2>
+      <p class="mail">
+        karani.vinaykumar7@gmail.com
       </p>
-    </dd>
-  </dl>
-  <hr>
-
-  <dl>
-    <dt>
-      <h3><strong>Licenses & Certifications</strong></h3>
-    </dt>
-    <dd>
-      <table>
-        <td>
-          <img src="480px-HackerRank_Icon-1000px.png" alt="kvinay7" width="30" height="30">
-        </td>
-        <td>
-          <p>HackerRank - <a href="https://www.hackerrank.com/certificates/87ba2e6f0ecd">Java (Basic)</a></p>
-        </td>
-      </table>
-    </dd>
-    <dd>
-      <table>
-        <td>
-          <img src="480px-HackerRank_Icon-1000px.png" alt="kvinay7" width="30" height="30">
-        </td>
-        <td>
-          <p>HackerRank - <a href="https://www.hackerrank.com/certificates/ffa5090dcac1">SQL (Basic)</a></p>
-        </td>
-      </table>
-    </dd>
-  </dl>
-  <hr>
-
-  <dl>
-    <dt>
-      <h3><strong>Skills</strong></h3>
-    </dt>
-    <dd>
-      <p>
-        C, Java, SQL, Linux, Python, Arduino
-      </p>
-    </dd>
-  </dl>
-  <hr>
-
+      <br><br>
+      <p class="links">Also find me on:</p>
+      <a href="https://www.linkedin.com/in/karani-vinay-kumar/" target="blank"><i class="fab fa-linkedin">
+        Linkedin</i></a>
+      <a href="https://github.com/kvinay7" target="blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.instagram.com/kvinay_7/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.facebook.com/kvkumar.vinay.9/" target="blank"><i class="fab fa-facebook"> Facebook</i></a>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
